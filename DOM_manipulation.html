@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="index.js"></script> -->
+  </head>
+  <body>
+    <button type="button" id="magic">Magic</button>
+    <script>
+      function addLi() {
+        const li = document.createElement("li");
+        li.textContent = "Hello World!";
+        let ul = document.getElementById("ul");
+        ul.appendChild(li);
+      }
+
+      // setInterval(addLi, 1000);
+
+      let button = document.getElementById("magic");
+
+      button.addEventListener("click", addLi);
+    </script>
+    <ul id="ul">
+      <li>test</li>
+    </ul>
+  </body>
+</html>
