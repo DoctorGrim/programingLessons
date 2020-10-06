@@ -31,16 +31,6 @@ const pullScores = function(obj, section = 1, callback) {
     return scores;
 }
 
-let outOf100 = function (val) {
-    if (val === null){
-        return 0
-    }else{
-        let arr = val.split(":");
-        return arr[0]/arr[1]
-    }
-    
-}
-
 
 let newObj = pullScores(learner1, 1)
 //let newObj = pullScores(learner1, 1, setNulltoZero)
