@@ -6,7 +6,8 @@ const kidsWithCandies = (candies, extraCandies) => {
     return "somthing";
   };
 
-
 let kids = kidsWithCandies([2,3,5,1,3], 3)
 
 console.log(kids)
+
+// expected outpuut [true, true, true, false, true]

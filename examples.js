@@ -61,10 +61,3 @@ const reverseString = (string) => {
     }
     return ret;
   };
-
-  const kidsWithCandies = (candies, extraCandies) => {
-    const max = Math.max(...candies);
-    return candies.map(candy => candy + extraCandies >= max);
-}
-
-const kidsWithCandies = (candies, extraCandies, max = Math.max(...candies)) => candies.map(candy => candy + extraCandies >= max);
